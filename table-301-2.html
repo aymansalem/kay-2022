@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dossier Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            font-size: 22px;
+            color: #1a1a1a;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-size: 16px;
+            color: #0066cc;
+            margin-top: 25px;
+        }
+        .form-group {
+            background: #fff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 13px;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+        button {
+            background-color: #0066cc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        button:hover {
+            background-color: #004d99;
+        }
+        #output-area {
+            margin-top: 20px;
+            background: #fff;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            display: none;
+        }
+        #result-box {
+            width: 100%;
+            height: 250px;
+            font-family: monospace;
+            font-size: 12px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1> Dossier Tracker</h1>
+   
+
+    
+    <div class="form-group">
+        <h2>CLM	May 12, 2022	Original claims filed with the application — not the issued claims.</h2>
+    
+        <label for="doc_1">CLM	May 12, 2022	Original claims filed with the application — not the issued claims:</label>
+        <textarea id="doc_1" placeholder="Paste Specification text here...">
+
+
+CLAIMS
+
+vVhat is claimed is:
+
+1.	A computer-implemented  method of identifying split stays comprising:
+recei ving, by a first computing device from a second computing  device operated by a user, user-specified stay information and at least one user-specified split stay criterion;
+determining, by the first computi ng device, a split stay based on the user-specified stay information;
+generating, by the first computing device, a mixture query for the split stay using the user-specified stay information wherein the mixture query compri ses a first sub-query for a first leg of the split stay and a second sub-query for a second leg of the split stay;
+obtaining, by the first computing devi ce, a first set of search resul ts for the first sub-query and a second set of search results for the second sub-query;
+determi ning, by the first computing device, a split stay option based at l east in part on the user-specified split stay criterion wherein the split stay option comprises a first stay option from the first set of search results and a second stay option from the second set of search results; and
+providing, by the first computing device, the split stay option to the second computing device for presentation to the user.
+
+2.	The computer-implemented method of claim 1, further comprising:
+hooki ng, by the first computing device, the split stay option on behalf of the user.
+
+3.	The computer-i mplemented method of claim 2, wherein:
+the first stay option is a cancelable stay option and the second stay option  is a non­ cancelable stay option; and
+booking the split stay option on behalf of the user comprises booking the cancelable stay option prior to booki ng the non-cancelabl e stay option.
+ 
+
+
+4.	The computer-implemented method of claim 1, further comprising:
+subsequent to booking the split stay option on behalf of the user, detem1ining, by the first computing device, that an alternative stay option sati sfies a rebooking criterion, and
+responsive to detem1ining that the alternative stay option satisfies the rebooking criterion: canceli ng, by the first computing device, either the first stay option hooked for the
+split stay option or the second stay option booked for the split stay option, and
+booking, by the first computing devi ce, the alternati ve stay option on behalf of the
+user.
+
+5.	The computer-implemented method of claim 1, wherein:
+determining the split stay option comprises detennining the split stay option further based on a predetermi ned split stay criterion.
+
+6.	The computer-implemented method of claim 5, wherei n:
+the predetermined split stay criterion is a room amenity or a room characteristic.
+
+7.	The computer-implemented method of claim 1, wherein:
+obtaining the first set of search results and the second set of search results comprises querying a data store storing room pricing information and room availability information with the mixture query;
+wherein the data store is located l ocally relative to the first computing device.
+ 
+
+
+8.	A system for identifying split stays comprising: one or more processors;
+a network interface in signal communication with a computing devi ce operated by a user;
+ 
+and
+ 
+
+
+memory storing instructions that, when executed by the one or more processors, cause the
+ 
+system to:
+ 
+
+
+receive, vi a the network interface from the computing device, user-speci fied stay
+ 
+infomrntion and at least one user-specified split stay criterion;
+determine a split stay based on the user-speci fied stay information;
+generate a mixture query for the split stay using the user-specified  stay information wherein the mixture query comprises a first sub-query for a first leg of the split stay and a second sub-query for a second l eg of the split stay;
+obtain a first set of search results for the first sub-query and a second set of search results for the second sub-query;
+determine a split stay option based at least in part on the user-specified split stay criterion wherein the split stay option comprises a fi rst stay option from the first set of search results and a second stay option from the second set of search results; and
+provide, via the network interface, the split stay option to the computing device for presentation to the user.
+
+9.	The system of claim 8, wherein:
+the instrnctions, when executed, further cause the system to book the split stay option on behalf of the user.
+
+10.	The system of claim 9, wherei n:
+the first stay option is a cancelable stay option and the second stay option is a non­ cancelable stay option; and
+the instructions, when executed, further cause the system to book the split stay option on behalf of the user by booking the cancelable stay option prior to booking the non-cancelable stay option.
+ 
+
+
+11.	The system of claim 9, wherein:
+the instructions, when  executed, further cause the system to, subsequent to booking the split stay option on behalf of the user:
+determine that an alternative stay option satisfies a rebooking criterion, and
+responsive to determini ng that the alternative stay option satisfies the rebooking criterion: cancel either the first stay option booked  for the split stay option or the second
+stay option booked for the split stay option, and
+book the alternative stay option on behalf of the user.
+
+12.	The system of claim 8, wherein:
+the instructions, when executed, further cause the system to determine  the  split  stay option further based on a predetermined split stay criterion.
+
+13.	The system of claim  8, further comprisi ng:
+a data store storing room pricing information and room availability information; and wherein the instructions, when executed, further cause the system to obtain the first set of
+search results and the second set of search results by querying the data store with the mixture query.
+
+14.	The system of claim 8, wherein:
+the instructions, when executed, further cause the system to provi de, vi a the network interface, split stay criteria to the computing device for presentation to the user;
+wherei n the split stay criteria comprises at least one room amenity criterion, at l east one room characteristic criterion, at least one lodging amenity criterion, at least one lodging characteristic criterion.
+ 
+
+
+15.	Non-transitory computer-readable media having computer-executable instructions stored thereon that, when executed by a processor of a computing device, cau se the computing device to:
+rece1vmg, via a network interface of the computing device from a user-operated computing device, user-specified stay information and at least one user-specified split stay criterion;
+determi ne a split stay based on the user-specified stay informati on;
+generate a mixture query for the split stay using the user-specified stay information wherein the mixture query compri ses a first sub-query for a first leg of the split stay and a second sub-query for a second l eg of the split stay;
+obtain a first set of search results for the first sub-query and a second set of search results for the second sub-query;
+determine a split stay option based at least in part on the user-specified split stay criterion wherein the split stay option comprises a first stay option from the first set of search results and a second stay option from the second set of search results; and
+provi de, via the network interface, the split stay option to the user-operated computing device for presentation to the user.
+
+16.	The non-transitory computer-readable medi a of claim 15, wherein the computer-executabl e instructions, when executed, further cause the computing device to:
+book the split stay option on behalf of the user.
+
+17.	The non-transitory computer-readable medi a of claim 16, wherei n:
+the first stay option is a cancelable stay option and the second stay option  is a non­ cancel able stay option; and
+the computer-executable instructions, when executed, fmiher cause the computing device to book the split stay option on behalf of the user by booki ng the cancelable stay option prior to booking the non-cancelable stay option.
+ 
+
+
+18.	The non-transitory computer-readable media of claim 16, wherein the computer-executable instructions, when executed, further cause the computing device to, subsequent to booking the split stay option on behalf of the user:
+determine that an alternative stay option satisfies a rebooking criterion, and
+responsive to determini ng that the alternative stay option satisfies the rebooking criterion: cancel either the first stay option booked  for the split stay option or the second
+stay option hooked for the split stay option, and
+book the alternative stay option on behalf of the user.
+
+19.	The non-transitory computer-readable media of claim 15, wherein the computer-executable instructions, when executed, further cause the computing device to:
+determine the split stay option further based on a predetermined split stay criterion that i s satisfied when a first bed type associated with the first stay option is the same as a second bed type associated with the second stay option.
+
+20.	The non-transitory computer-readable medi a of claim 15, wherein the computer-executabl e instructions, when executed, further cause the computing device to:
+obtain the first set of search results and the second set of search results by querying a data store storing room pricing information and room availability information with the mixture query;
+wherein the data store is located locally relative to the computing device.
+        </textarea>
+    </div>
+    </div>
+    <div class="form-group">
+        <label for="doc_2"><h1>CLM	July 20–22, 2022	Amended claims filed during prosecution.:</h1></label>
+        <textarea id="doc_2" placeholder="Paste text here...">
+
+
+
+
+
+Amendments to the Claims:
+
+This listing of claims replaces all prior versions and listings of claims in the application:
+
+
+Listing of Claims:
+
+
+
+1. - 20. (Canceled)
+
+
+21.	(New) A computer-implemented  method for reserving a lodging, the method comprising: performing,  by a search service system, a priming  query to obtain a plurality  of prices
+and availabilities associated with a plurality of bookable locations, wherein the priming query is not associated with a user query;
+storing the plurality of prices and availabilities obtained from the priming query in  a pricing and availability database maintained by the search service system;
+receiving, via a user interacting with an interactive graphical user interface (GUI) presented by the search service system, user-specified stay information and one or more criteria;
+identifying, using prices and availabilities stored in the pricing and availability database, a split-stay that satisfies the user-specified stay information and the one or more criteria, wherein the split-stay comprises two or more legs of the stay that are indicated as  available  or  and wherein each leg of the stay satisfies the one or more criteria;
+determining, from the pricing and availability database,  an online source of each leg of the split stay that satisfies the user-specific stay information;
+determining, from the pricing and availability database, a price for each leg of the split-
+ 
+stay;
+ 
+
+
+presenting,  by the service search system and via the interactive GUI, the split-stay, the
+ 
+price of each leg of the split stay, and the online source of each leg of the split stay to the user; presenting, by the interactive GUI, a single interface element by which the user can book
+all legs of the split stay;
+ 
+
+
+receiving, from the user and via the interactive GUI, an approval of the split-stay and in response:
+for each contiguous booking of the split-stay, accessing an API associated with a particular lodging provider offering the booking;
+transmitting, by the search service system via the API, a booking request for the contiguous booking on behalf of the user; and
+providing a confirmation of each successful booking to the user via the interactive
+GUI.
+
+
+22.	(New) The method of claim 21, wherein the priming query is scheduled to occur during a low-demand period to reduce network traffic volume, and wherein the service search system periodically performs priming queries to maintain the booking database.
+
+23.	(New) The method of claim 21, wherein the priming query comprises  a plurality  of queries directed at OTA systems, travel service pricing engine systems, and lodging systems.
+
+24.	(New) The method of claim 21, wherein the one or more criteria specifies a minimum length for at least one contiguous booking of the split-stay.
+
+25.	(New) The method of claim 21, wherein the one or more criteria comprises a first criteria that is specific to a first booking of the split-stay, and  a second criteria, that is specific to a second booking of the split-stay.
+
+26.	(New) The method of claim 21, wherein the API associated with the particular lodging provider receives an approval message from the particular lodging provider and, in response, provides payment information associated with the user to the particular lodging provider.
+
+27.	(New) The method of claim 21, wherein the API associated with the particular lodging provider generates the booking request by converting data from the pricing and availability database into a format associated with the particular lodging provider.
+ 
+
+
+
+
+28.	(New) A non-transitory, computer-readable storage medium that comprises  instructions that, when executed by at least one processor, cause the at least one processor to perform operations for reserving a lodging, the operations comprising:
+performing, by a search service system, a priming query to obtain a plurality of prices and availabilities associated with a plurality of bookable locations, wherein the priming query is not associated with a user query;
+storing the plurality of prices and availabilities obtained from the priming query in  a pricing and availability database maintained by the search service system;
+receiving, via a user interacting with an interactive graphical user interface (GUI) presented by the search service system, user-specified stay information and one or more criteria;
+identifying, using prices and availabilities stored in the pricing and availability database, a split-stay that satisfies the user-specified stay information and the one or more criteria, wherein the split-stay comprises two or more legs of the stay that are indicated as  available  or  and wherein each leg of the stay satisfies the one or more criteria;
+determining, from the pricing and availability database,  an online source of each leg of the split stay that satisfies the user-specific stay information;
+determining, from the pricing and availability database, a price for each leg of the split-
+ 
+stay;
+ 
+
+
+presenting,  by the service search system and via the interactive GUI, the split-stay, the
+ 
+price of each leg of the split stay, and the online source of each leg of the split stay to the user; presenting, by the interactive GUI, a single interface element by which the user can book
+all legs of the split stay;
+receiving, from the user and via the interactive GUI, an approval of the split-stay and in response:
+for each contiguous booking of the split-stay, accessing an API associated with a particular lodging provider offering the booking;
+transmitting, by the search service system via the API, a booking request for the contiguous booking on behalf of the user; and
+ 
+
+ 
+
+
+GUI.
+ 
+
+providing a confirmation of each successful booking to the user via the interactive
+ 
+
+
+29.	(New) The non-transitory medium of claim 28, wherein the priming query is scheduled to occur during a low-demand period to reduce  network traffic volume, and wherein  the service search system periodically performs priming queries to maintain the booking database.
+
+30.	(New) The non-transitory medium of claim 28, wherein the priming query comprises a plurality of queries directed at OTA systems, travel service pricing engine systems, and lodging systems.
+
+31.	(New) The non-transitory medium of claim 28, wherein the one or more criteria specifies a minimum length for at least one contiguous booking of the split-stay.
+
+32.	(New) The non-transitory medium of claim 28, wherein the one or more criteria comprises a first criteria that is specific to a first booking of the split-stay, and a second criteria, that is specific to a second booking of the split-stay.
+
+33.	(New) The non-transitory medium of claim 28, wherein the API associated with the particular lodging provider receives an approval message from the particular lodging provider and, in response, provides payment information associated with the user to the particular lodging provider.
+
+34.	(New) The non-transitory medium of claim 28, wherein the API associated with the particular lodging provider generates the booking request by converting  data from the pricing and availability database into a format associated with the particular lodging provider.
+
+35.	(New) A system for reserving a lodging, the system comprising: one or more processors;
+ 
+
+
+one or more tangible, non-transitory computer-readable media  operably  connectable  to the one or processors and storing instructions that, when executed, cause the one or more processors to perform operations comprising:
+performing, by a search service system, a priming query to obtain a plurality of prices and availabilities associated with a plurality of bookable locations, wherein the priming query is not associated with a user query;
+storing the plurality of prices and availabilities obtained from the priming query in  a pricing and availability database maintained by the search service system;
+receiving, via a user interacting with an interactive graphical user interface (GUI) presented by the search service system, user-specified stay information and one or more criteria;
+identifying, using prices and availabilities stored in the pricing and availability database, a split-stay that satisfies the user-specified stay information and the one or more criteria, wherein the split-stay comprises two or more legs of the stay that are indicated as  available  or  and wherein each leg of the stay satisfies the one or more criteria;
+determining, from the pricing and availability database,  an online source of each leg of the split stay that satisfies the user-specific stay information;
+determining, from the pricing and availability database, a price for each leg of the split-
+ 
+stay;
+ 
+
+
+presenting,  by the service search system and via the interactive GUI, the split-stay, the
+ 
+price of each leg of the split stay, and the online source of each leg of the split stay to the user; presenting, by the interactive GUI, a single interface element by which the user can book
+all legs of the split stay;
+receiving, from the user and via the interactive GUI, an approval of the split-stay and in response:
+for each contiguous booking of the split-stay, accessing an API associated with a particular lodging provider offering the booking;
+transmitting, by the search service system via the API, a booking request for the contiguous booking on behalf of the user; and
+providing a confirmation of each successful booking to the user via the interactive
+GUI.
+ 
+
+
+
+
+36.	(New) The system of claim 35, wherein the priming query is scheduled to occur during a low-demand period to reduce network traffic volume, and wherein the service search system periodically performs priming queries to maintain the booking database.
+
+37.	(New) The system of claim 35, wherein the priming query compnses  a  plurality  of queries directed at OTA systems, travel service pricing engine systems, and lodging systems.
+
+38.	(New) The system of claim 35, wherein the one or more criteria comprises a first criteria that is specific to a first booking of the split-stay, and  a second criteria, that is specific to a second booking of the split-stay.
+
+39.	(New) The system of claim 35, wherein the API associated with the particular lodging provider receives an approval message from the particular lodging provider and, in response, provides payment information associated with the user to the particular lodging provider.
+
+40.	(New) The system of claim 35, wherein the API associated with the particular lodging provider generates the booking request by converting data from the pricing and availability database into a format associated with the particular lodging provider.
+
+
+
+        </textarea>
+
+    </div>
+
+<!--COPY
+     <div class="form-group">
+        <label for="doc_1">Paste Converted Text for Specification (Doc #1):</label>
+        <textarea id="doc_1" placeholder="Paste Specification text here...">
+[0001] The disclosures herein are generally directed to database and file access including...
+        </textarea>
+    </div>
+
+    <div>
+    <label for="doc_1">Paste Converted Text for Specification (Doc #1):</label><br>
+    <textarea id="doc_1" rows="10" cols="50" placeholder="Paste Specification text here..."></textarea>
+</div>
+-->
+<div>
+    <label>CTNF	December 22, 2022	Non-final Office Action.:</label><br>
+    <div>
+        <img src="img/CTNF-12-22_Page_01.png" alt="Drawing 1" width="700">
+    </div>
+</div>
+
+    <div class="form-group">
+        <label for="doc_1">CTNF	December 22, 2022	Non-final Office Action.:</label>
+        <textarea id="doc_1" placeholder="Paste Specification text here...">
+DETAILED ACTION
+
+Notice of Pre-A/A or A/A Status
+
+The present application,  filed on or after March  16, 2013,  is being examined  under the first inventor  to file provisions of the AIA.
+
+Claim Rejections - 35 USC § 101
+
+35 U.S.C. 101 reads as follows:
+
+Whoever invents or discovers any new and us eful process, machine, manufacture, or composition of matter, or any new and useful improvementthereof, mayobtain a patent therefor, s ubject to the conditions and requirements of this title.
+
+
+1.	Claims 21-40 are rejected under 35 U.S.C. 101 because the claimed invention is directed to non-statutory subject matter because the claimed invention is directed to a judicial exception (i.e., a law of nature, a natural phenomenon, or an abstract idea) without significantly more.
+MPEP 2106 Step 2A-Prong  1
+
+The claims recite:
+
+performing, by a search service system, a priming query to obtain a plurality of prices and availabilities associated with a plurality of bookable locations, wherein the priming query is not associated with a user query;
+
+storing the plurality of prices and availabilities obtained from the priming query in a pricing and availability maintained by the search service system;
+receiving, via a user interacting, user-specified stay information and one or more criteria; identifying, using prices and availabilities,
+a split-stay that satisfies the user-specified stay information and the one or more criteria, wherein
+the split-stay comprises two or more legs of the stay that are indicated as available or and
+wherein each leg of the stay satisfies the one or more criteria;
+
+determining, a source of each leg of the split stay that satisfies the user -specific stay information;
+ 
+
+determining, from the pricing and availability database, a price for each leg of the split ­ stay;
+
+presenting, by the service search system and via the interactive GUI, the split -stay, the price of each leg of the split stay, and the online source of each leg of the split stay to the user;
+
+presenting, a single element by which the user can book all legs of the split stay;
+receiving, from the user, an approval of the split-stay and in response:
+
+for each contiguous booking of the split-stay, associated with a particular lodging provider offering the booking;
+
+transmitting, by the search service system, a booking request for the contiguous booking on behalf of the user; and
+
+providing a confirmation of each successful booking to the user
+
+The claims falls  into the abstract idea groupings  of (b) Certain  Methods  Of Organizing  Human Activity  ** fundamental economic principles or practices (including hedging, insurance, mitigating risk) commercial or legal interactions  (including agreements in the form of contracts; legal obligations; advertising, marketing or sales activities or behaviors; business relations) managing personal behavior or relationships or interactions betVt.€en people (including social activities, teaching, and following   rules or instructions)**  and  (c) mental processes-concepts  performed  in the human mind- (including an observation, evaluation, judgment,  opinion).
+The limitations  under their  broadest reasonable  interpretation,  covers performance of the  limitation  certain  methods of  organizing  human activity  and  mental processes, but for the recitation  of generic  computer components.   That is, other than  recited, "database,  GUI,  online  source,  API, processors, non-transitory   computer  readable medium",  nothing  in the claim element  precludes the step from  practically being marketing or sales activities or behaviors; business relations) managing personal behavior  and mental processes.  Accordingly,  the claims recite an abstract idea.
+ 
+
+
+
+MPEP 2106 Step 2A-Prong  2
+
+The recited limitations are not indicative of integration  into a practical application.
+
+In particular, the claims only recite the following additional  elements, "database, GUI, online source, API, processors, non-transitory computer readable  medium. These additional elements are recited at a high-level of generality such that in conjunction with the abstract limitations, they amount to no more than:
+•	Adding the words "apply it" (or an equivalent)  with the judicial exception, or mere instructions to implement an abstract idea on a computer, or merely uses a computer as a tool to perform an abstract idea - see MPEP 2106.05(f);
+- ("database, GUI, online source, API, processors, non-transitory computer readable medium)
+The claims do not include additional elements individually or in an ordered combination that are sufficient to amount to significantly more than the judicial exception.	Integration  into a practical application requires the additional element(s) to              apply, rely on, or use the judicial exception in a manner that imposes a meaningful limit on the judicial exception, such that the claim is more than a drafting effort designed to monopolize the exception. This is not the case in the instant application.  Further, as discussed above with respect to integration of the abstract idea into a practical application, the additional elements amount to no more than: mere instructions to apply the exception using a generic computer component;
+MPEP 2106 Step 28
+ 
+
+Eligibility requires that the claim recites additional elements that amount to an inventive concept (aka "significantly  more") than the recited judicial exception. As discussed above, this is where the instant application falls short. The claims do not include additional elements individually  or in an ordered combination that are sufficient to amount to significantly more than the judicial exception
+Dependent Claims Step 2A:
+
+The limitations of the dependent claims but for those addressed below merely set forth further refinements of the abstract idea without changing the analysis already presented (that is, they further limit the organizing of human activities at step 2A - Prong One without adding any new additional elements other than those already analyzed above with respect to the independent claims at 2A - Prong Two; moreover claims 23, 30 and 37 and their analogous claims also further recite certain methods of organizing human activity).
+Dependent Claims Step 28:
+
+The dependent claims merely use the same general technological  environment and instructions to implement the abstract idea as the independent  claims without
+adding any new additional elements. Accordingly, they are not directed to significantly more than the exception itself, and are not eligible subject matter under § 101.
+
+
+
+
+Claim Rejections - 35 USC § 103
+
+2.	The following is a quotation of 35 U.S.C. 103 which forms the basis for all obviousness rejections set forth in this Office action:
+ 
+
+A patent for a claimed invention may not be obtained, notwithstanding that the claimed invention is not identicallydisclosed as set forth in s ection 102, if the differences between the claimed invention and the prior art are such that the claimed invention as a whole would have been obvious before the effective filing date of the claimed i nvention to a person having ordinaryskill in the art to which the claimed invention pertains. Patentabilityshall not be negated by the manner in which the invention was made.
+
+3.	Claims 21-24, 26, 28-30, 33, 35-37 and 39 are rejected under 35 U.S.C. 103 as being unpatentable over Shust U.S. Pre-Grant Publication No. 20180012161  in view of Baggett U.S. Pre-Grant Publication No. 2009/0234682 A1 I further view of Shin U.S. Pre-Grant Publication No. 2010/0305981 A1
+4.	As per Claim 21, 28 and 35 are Shust teaches
+
+One or more processors receiving, via a user interacting with an interactive graphical user interface (GUI)
+presented by the search service system, user-specified stay information and one or more criteria (see para. 106 and 121);
+identifying, using prices and availabilities  stored in the pricing and availability database, a split-stay that satisfies the user-specified stay information and the one or more criteria (see para. 11, 17 and 21), wherein the split-stay comprises two or more legs of the stay that are indicated as available  or and
+wherein each leg of the stay satisfies the one or more criteria (see para. 11, 17 and 9); determining, from the pricing and availability  database, an online source of each leg of the split stay that satisfies the user-specific stay information  (see para.116); determining, from the pricing and availability  database, a price for each leg of the split- stay (see para. 112 and 136);
+presenting, by the service search system and via the interactive GUI, the split-stay, the
+ 
+
+price of each leg of the split stay, and the online source of each leg of the split stay to
+
+the user (see para. 112 and 136);
+
+presenting, by the interactive GUI, a single interface element by which the user can book all legs of the split stay (see para. 138-139);
+receiving, from the user and via the interactive GUI, an approval of the split-stay and in response (see para. 135-136):
+for each contiguous  booking of the split-stay, accessing an API associated with a particular lodging provider offering the booking;
+transmitting, by the search service system via the API, a booking request for the contiguous booking on behalf of the user (see para. 135-141); and
+Shust does not explicitly teach the limitation taught by Baggett performing, by a search service system, a priming query to obtain a plurality of prices
+and availabilities  associated with a plurality of bookable flights, wherein the priming query is not associated with a user query (see para.  42);
+storing the plurality of prices and availabilities  obtained from the priming query in a pricing and availability  database maintained by the search service system (see para. 47). It would have been prima facie obvious to one of ordinary skill in the art at the time the invention was filed to modify the method of Shust to include the teachings of Baggett to ensure that all itinerary items are in the cache, because querying an availability source takes a non-trivial amount of time, as taught by the cited portion of Baggett.
+Shust does not explicitly teach the limitation taught by Shin providing a confirmation of each successful booking to the user via the interactive  GUI (see para. 27, 47 and fig.
+ 
+
+10). It would have been prima facie obvious to one of ordinary skill in the art at the time the invention was filed to modify the method of Shust and Baggett to include the teachings of Shin to ensure that a user has relevant information regarding an upcoming stay, as suggested by Shin.
+5.	As per Claims 22, 29 and 36, Shust in view of Baggett in further view of Shin teach the method of claim 21 as described above. Shust does not explicitly teach the limitation taught by Baggett wherein the priming query is scheduled to occur during a low-demand period to reduce network traffic volume, and wherein the service search system periodically performs priming queries to maintain the booking database  (see para. 28). The motivation is the same as opined above with respect to Baggett.
+6.	As per Claims 23, 30 and 37, Shust in view of Baggett in further view of Shin teach the method of claim 21 as described above. Shust further teaches wherein the query comprises a plurality of queries directed at OTA systems, travel service pricing engine systems, and itinerary systems (see para. 71). Baggett teaches a priming query.
+7.	As per Claim 24, and 31, Shust in view of Baggett in further view of Shin teach the method of claim 21 as described above. Shust further teaches wherein the one or more criteria specifies a minimum length for at least one contiguous  booking of the split- stay (see para. 9, the Examiner is interpreting 5 days as a minimum length).
+8.	As per Claim 26, 33 and 39, Shust in view of Baggett in further view of Shin teach the method of claim 21 as described above. Shust further teaches wherein the API associated with the particular lodging provider receives an approval message from the particular lodging provider and, in response, provides payment information associated with the user to the particular lodging provider  (see para.  137-138 and 121,
+ 
+
+the Examiner is interpreting the verification of availability  through info sent by a lodging provider, as an approval).
+9.	Claims 25, 32 and 38 are rejected under 35 U.S.C. 103 as being unpatentable over Shust U.S. Pre-Grant Publication No. 20180012161  in view of Baggett U.S. Pre- Grant Publication No. 2009/0234682  A1 in further view of Shin U.S. Pre-Grant Publication No. 2010/0305981 A1 and Istanbul-Trip Advisor-(Reference  U of the attached  PT0-892)
+10.	As per Claims 25, 32 and 38, Shust in view of Baggett in further view of Shin teach the method of claim 21 as described above. Shust does not explicitly teach the limitation taught by Istanbul wherein the one or more criteria comprises a first criteria that is specific to a first query of the split-stay, and a second criteria, that is specific to a second query of the split-stay (see pg. 1-Leone K., the Examiner is interpreting a split stay at hotels in Sultanahmet  and Taksim as criteria that is specific to a first and second booking. Shust teaches a booking.
+11.	Claims 27, 34 and 40 are rejected under 35 U.S.C. 103 as being unpatentable over Shust U.S. Pre-Grant Publication No. 20180012161  in view of Baggett U.S. Pre- Grant Publication No. 2009/0234682  A1 in further view of Shin U.S. Pre-Grant Publication No. 2010/0305981 A1 and Robertson U.S Patent No. 7584110 B2
+12.	As per Claims 27, 34 and 40, Shust in view of Baggett in further view of Shin teach the method of claim 21 as described above. Shust does not explicitly teach the limitation taught by Robertson wherein the API associated with the particular lodging provider generates the booking request by converting data from the pricing and availability database into a format associated with the particular lodging provider (see
+ 
+
+Col. 6 lines 32-35 and Claim 1). It would have been prima facie obvious to one of
+
+ordinary skill in the art at the time the invention was filed to modify the method of Shust, Baggett and Shin to include the teachings of Robertson to complete a booking.
+Conclusion
+
+13.	Any inquiry concerning this communication or earlier communications from the examiner should be directed to TONYA S JOSEPH whose telephone  number is
+(571)270-1361.  The examiner can normally be reached M-F 6:30-2:30, First Fridays Off.
+
+Examiner interviews are available via telephone, in-person, and video conferencing using a USPTO supplied web-based collaboration  tool. To schedule an interview, applicant is encouraged to use the USPTO Automated  Interview  Request (AIR) at http://www.uspto.gov/interviewpractice.
+If attempts to reach the examiner by telephone  are unsuccessful, the exam iner's supervisor, Shannon Campbell can be reached on (571) 272-5587. The fax phone number for the organization where this application or proceeding is assigned is 571 - 273-8300.
+Information regarding the status of published or unpublished applications may be obtained from Patent Center. Unpublished application information in Patent Center is available to registered users. To file and manage patent submissions in Patent Center, visit: https://patentcenter.uspto.gov.  Visit https://www.uspto.gov/patents/apply/patent - center for more information about Patent Center and
+https://www.uspto.gov/patents/docx	for information about filing in DOCX format. For additional questions, contact the Electronic Business Center (EBC) at 866-217-9197
+ 
+
+(toll-free). If you would like assistance from a USPTO Customer Service Representative, call 800-786-9199  (IN USA OR CANADA)  or 571-272-1000.
+
+
+
+/TONYA JOSEPH/
+Primary Examiner, Art Unit 3628
+        </textarea>
+    </div>
+
+    
+
+<div>
+    <label>EXIN	April 20, 2023	Examiner interview-related record</label><br>
+    <div>
+        <img src="img/CTNF-12-22_Page_01.png" alt="Drawing 1" width="700">
+        <img src="img/CTNF-12-22_Page_02.png" alt="Drawing 1" width="700">
+    </div>
+</div>
+
+<!--<div>
+    <label for="doc_1">EXIN	April 20, 2023	Examiner interview-related record.:</label><br>
+    <textarea id="doc_1" rows="10" cols="50" placeholder="Paste Specification text here..."></textarea>
+</div>
+
+<div>
+    <label for="doc_1">EXIN	April 20, 2023	Examiner interview-related record.:</label><br>
+    <textarea id="doc_1" rows="10" cols="50" placeholder="Paste Specification text here..."></textarea>
+</div>
+-->
+<div>
+    <label>CLM	May 25, 2023	Amended claims.:</label><br>
+    <div>
+        <img src="img/CLM-5-23_Page_1.png" alt="Drawing 1" width="700">
+        <img src="img/CLM-5-23_Page_2.png" alt="Drawing 1" width="700">
+        <img src="img/CLM-5-23_Page_3.png" alt="Drawing 1" width="700">
+        <img src="img/CLM-5-23_Page_4.png" alt="Drawing 1" width="700">
+        <img src="img/CLM-5-23_Page_5.png" alt="Drawing 1" width="700">
+        <img src="img/CLM-5-23_Page_6.png" alt="Drawing 1" width="700">
+    </div>
+</div>
+
+
+
+<div>
+    <label>CLM	CTFR	September 8, 2023	Final Office Action.:</label><br>
+    <img src="img/CTFR-9-23_Page_1.png" alt="Drawing 1" width="700">
+        <img src="img/CTFR-9-23_Page_2.png" alt="Drawing 1" width="700">
+</div>
+    <label for="doc_1">CTFR	September 8, 2023	Final Office Action..:</label><br>
+    <textarea id="doc_1" rows="10" cols="50" placeholder="Paste Specification text here...">
+
+        DETAILED ACTION
+
+Notice of Pre-A/A or A/A Status
+
+The present application,  filed on or after March  16, 2013,  is being examined  under the first inventor  to file provisions of the AIA.
+
+Claim Rejections - 35 USC § 101
+
+35 U.S.C. 101 reads as follows:
+
+Whoever invents or discovers any new and us eful process, machine, manufacture, or composition of matter, or any new and useful improvementthereof, mayobtain a patent therefor, s ubject to the conditions and requirements of this title.
+
+
+1.	Claims 21-40 are rejected under 35 U.S.C. 101 because the claimed invention is directed to non-statutory subject matter because the claimed invention is directed to a judicial exception (i.e., a law of nature, a natural phenomenon, or an abstract idea) without significantly more.
+MPEP 2106 Step 2A-Prong  1
+
+The claims recite:
+
+performing, by a search service system, a priming query to obtain a plurality of prices and availabilities associated with a plurality of bookable locations, wherein the priming query is not associated with a user query;
+
+storing the plurality of prices and availabilities obtained from the priming query in a pricing and availability maintained by the search service system;
+receiving, via a user interacting, user-specified stay information and one or more criteria; identifying, using prices and availabilities,
+a split-stay that satisfies the user-specified stay information and the one or more criteria, wherein
+the split-stay comprises two or more legs of the stay that are indicated as available or and
+wherein each leg of the stay satisfies the one or more criteria;
+
+determining, a source of each leg of the split stay that satisfies the user -specific stay information;
+ 
+
+determining, from the pricing and availability database, a price for each leg of the split ­ stay;
+
+presenting, by the service search system and via the interactive GUI, the split -stay, the price of each leg of the split stay, and the online source of each leg of the split stay to the user;
+
+presenting, a single element by which the user can book all legs of the split stay;
+receiving, from the user, an approval of the split-stay and in response:
+
+for each contiguous booking of the split-stay, associated with a particular lodging provider offering the booking;
+
+transmitting, by the search service system, a booking request for the contiguous booking on behalf of the user; and
+
+providing a confirmation of each successful booking to the user
+
+The claims falls  into the abstract idea groupings  of (b) Certain  Methods  Of Organizing  Human Activity  ** fundamental economic principles or practices (including hedging, insurance, mitigating risk) commercial or legal interactions  (including agreements in the form of contracts; legal obligations; advertising, marketing or sales activities or behaviors; business relations) managing personal behavior or relationships or interactions betVt.€en people (including social activities, teaching, and following   rules or instructions)**  and  (c) mental processes-concepts  performed  in the human mind- (including an observation, evaluation, judgment,  opinion).
+The limitations  under their  broadest reasonable  interpretation,  covers performance of the  limitation  certain  methods of  organizing  human activity  and  mental processes, but for the recitation  of generic  computer components.   That is, other than  recited, "database,  GUI,  online  source,  API, processors, non-transitory   computer  readable medium",  nothing  in the claim element  precludes the step from  practically being marketing or sales activities or behaviors; business relations) managing personal behavior  and mental processes.  Accordingly,  the claims recite an abstract idea.
+ 
+
+
+
+MPEP 2106 Step 2A-Prong  2
+
+The recited limitations are not indicative of integration  into a practical application.
+
+In particular, the claims only recite the following additional  elements, "database, GUI, online source, API, processors, non-transitory computer readable  medium. These additional elements are recited at a high-level of generality such that in conjunction with the abstract limitations, they amount to no more than:
+•	Adding the words "apply it" (or an equivalent)  with the judicial exception, or mere instructions to implement an abstract idea on a computer, or merely uses a computer as a tool to perform an abstract idea - see MPEP 2106.05(f);
+- ("database, GUI, online source, API, processors, non-transitory computer readable medium)
+The claims do not include additional elements individually or in an ordered combination that are sufficient to amount to significantly more than the judicial exception.	Integration  into a practical application requires the additional element(s) to              apply, rely on, or use the judicial exception in a manner that imposes a meaningful limit on the judicial exception, such that the claim is more than a drafting effort designed to monopolize the exception. This is not the case in the instant application.  Further, as discussed above with respect to integration of the abstract idea into a practical application, the additional elements amount to no more than: mere instructions to apply the exception using a generic computer component;
+MPEP 2106 Step 28
+ 
+
+Eligibility requires that the claim recites additional elements that amount to an inventive concept (aka "significantly  more") than the recited judicial exception. As discussed above, this is where the instant application falls short. The claims do not include additional elements individually  or in an ordered combination that are sufficient to amount to significantly more than the judicial exception
+Dependent Claims Step 2A:
+
+The limitations of the dependent claims but for those addressed below merely set forth further refinements of the abstract idea without changing the analysis already presented (that is, they further limit the organizing of human activities at step 2A - Prong One without adding any new additional elements other than those already analyzed above with respect to the independent claims at 2A - Prong Two; moreover claims 23, 30 and 37 and their analogous claims also further recite certain methods of organizing human activity).
+Dependent Claims Step 28:
+
+The dependent claims merely use the same general technological  environment and instructions to implement the abstract idea as the independent  claims without
+adding any new additional elements. Accordingly, they are not directed to significantly more than the exception itself, and are not eligible subject matter under § 101.
+
+
+
+
+Claim Rejections - 35 USC § 103
+
+2.	The following is a quotation of 35 U.S.C. 103 which forms the basis for all obviousness rejections set forth in this Office action:
+ 
+
+A patent for a claimed invention may not be obtained, notwithstanding that the claimed invention is not identicallydisclosed as set forth in s ection 102, if the differences between the claimed invention and the prior art are such that the claimed invention as a whole would have been obvious before the effective filing date of the claimed i nvention to a person having ordinaryskill in the art to which the claimed invention pertains. Patentabilityshall not be negated by the manner in which the invention was made.
+
+3.	Claims 21-24, 26, 28-30, 33, 35-37 and 39 are rejected under 35 U.S.C. 103 as being unpatentable over Shust U.S. Pre-Grant Publication No. 20180012161  in view of Baggett U.S. Pre-Grant Publication No. 2009/0234682 A1 I further view of Shin U.S. Pre-Grant Publication No. 2010/0305981 A1
+4.	As per Claim 21, 28 and 35 are Shust teaches
+
+One or more processors receiving, via a user interacting with an interactive graphical user interface (GUI)
+presented by the search service system, user-specified stay information and one or more criteria (see para. 106 and 121);
+identifying, using prices and availabilities  stored in the pricing and availability database, a split-stay that satisfies the user-specified stay information and the one or more criteria (see para. 11, 17 and 21), wherein the split-stay comprises two or more legs of the stay that are indicated as available  or and
+wherein each leg of the stay satisfies the one or more criteria (see para. 11, 17 and 9); determining, from the pricing and availability  database, an online source of each leg of the split stay that satisfies the user-specific stay information  (see para.116); determining, from the pricing and availability  database, a price for each leg of the split- stay (see para. 112 and 136);
+presenting, by the service search system and via the interactive GUI, the split-stay, the
+ 
+
+price of each leg of the split stay, and the online source of each leg of the split stay to
+
+the user (see para. 112 and 136);
+
+presenting, by the interactive GUI, a single interface element by which the user can book all legs of the split stay (see para. 138-139);
+receiving, from the user and via the interactive GUI, an approval of the split-stay and in response (see para. 135-136):
+for each contiguous  booking of the split-stay, accessing an API associated with a particular lodging provider offering the booking;
+transmitting, by the search service system via the API, a booking request for the contiguous booking on behalf of the user (see para. 135-141); and
+Shust does not explicitly teach the limitation taught by Baggett performing, by a search service system, a priming query to obtain a plurality of prices
+and availabilities  associated with a plurality of bookable flights, wherein the priming query is not associated with a user query (see para.  42);
+storing the plurality of prices and availabilities  obtained from the priming query in a pricing and availability  database maintained by the search service system (see para. 47). It would have been prima facie obvious to one of ordinary skill in the art at the time the invention was filed to modify the method of Shust to include the teachings of Baggett to ensure that all itinerary items are in the cache, because querying an availability source takes a non-trivial amount of time, as taught by the cited portion of Baggett.
+Shust does not explicitly teach the limitation taught by Shin providing a confirmation of each successful booking to the user via the interactive  GUI (see para. 27, 47 and fig.
+ 
+
+10). It would have been prima facie obvious to one of ordinary skill in the art at the time the invention was filed to modify the method of Shust and Baggett to include the teachings of Shin to ensure that a user has relevant information regarding an upcoming stay, as suggested by Shin.
+5.	As per Claims 22, 29 and 36, Shust in view of Baggett in further view of Shin teach the method of claim 21 as described above. Shust does not explicitly teach the limitation taught by Baggett wherein the priming query is scheduled to occur during a low-demand period to reduce network traffic volume, and wherein the service search system periodically performs priming queries to maintain the booking database  (see para. 28). The motivation is the same as opined above with respect to Baggett.
+6.	As per Claims 23, 30 and 37, Shust in view of Baggett in further view of Shin teach the method of claim 21 as described above. Shust further teaches wherein the query comprises a plurality of queries directed at OTA systems, travel service pricing engine systems, and itinerary systems (see para. 71). Baggett teaches a priming query.
+7.	As per Claim 24, and 31, Shust in view of Baggett in further view of Shin teach the method of claim 21 as described above. Shust further teaches wherein the one or more criteria specifies a minimum length for at least one contiguous  booking of the split- stay (see para. 9, the Examiner is interpreting 5 days as a minimum length).
+8.	As per Claim 26, 33 and 39, Shust in view of Baggett in further view of Shin teach the method of claim 21 as described above. Shust further teaches wherein the API associated with the particular lodging provider receives an approval message from the particular lodging provider and, in response, provides payment information associated with the user to the particular lodging provider  (see para.  137-138 and 121,
+ 
+
+the Examiner is interpreting the verification of availability  through info sent by a lodging provider, as an approval).
+9.	Claims 25, 32 and 38 are rejected under 35 U.S.C. 103 as being unpatentable over Shust U.S. Pre-Grant Publication No. 20180012161  in view of Baggett U.S. Pre- Grant Publication No. 2009/0234682  A1 in further view of Shin U.S. Pre-Grant Publication No. 2010/0305981 A1 and Istanbul-Trip Advisor-(Reference  U of the attached  PT0-892)
+10.	As per Claims 25, 32 and 38, Shust in view of Baggett in further view of Shin teach the method of claim 21 as described above. Shust does not explicitly teach the limitation taught by Istanbul wherein the one or more criteria comprises a first criteria that is specific to a first query of the split-stay, and a second criteria, that is specific to a second query of the split-stay (see pg. 1-Leone K., the Examiner is interpreting a split stay at hotels in Sultanahmet  and Taksim as criteria that is specific to a first and second booking. Shust teaches a booking.
+11.	Claims 27, 34 and 40 are rejected under 35 U.S.C. 103 as being unpatentable over Shust U.S. Pre-Grant Publication No. 20180012161  in view of Baggett U.S. Pre- Grant Publication No. 2009/0234682  A1 in further view of Shin U.S. Pre-Grant Publication No. 2010/0305981 A1 and Robertson U.S Patent No. 7584110 B2
+12.	As per Claims 27, 34 and 40, Shust in view of Baggett in further view of Shin teach the method of claim 21 as described above. Shust does not explicitly teach the limitation taught by Robertson wherein the API associated with the particular lodging provider generates the booking request by converting data from the pricing and availability database into a format associated with the particular lodging provider (see
+ 
+
+Col. 6 lines 32-35 and Claim 1). It would have been prima facie obvious to one of
+
+ordinary skill in the art at the time the invention was filed to modify the method of Shust, Baggett and Shin to include the teachings of Robertson to complete a booking.
+Conclusion
+
+13.	Any inquiry concerning this communication or earlier communications from the examiner should be directed to TONYA S JOSEPH whose telephone  number is
+(571)270-1361.  The examiner can normally be reached M-F 6:30-2:30, First Fridays Off.
+
+Examiner interviews are available via telephone, in-person, and video conferencing using a USPTO supplied web-based collaboration  tool. To schedule an interview, applicant is encouraged to use the USPTO Automated  Interview  Request (AIR) at http://www.uspto.gov/interviewpractice.
+If attempts to reach the examiner by telephone  are unsuccessful, the exam iner's supervisor, Shannon Campbell can be reached on (571) 272-5587. The fax phone number for the organization where this application or proceeding is assigned is 571 - 273-8300.
+Information regarding the status of published or unpublished applications may be obtained from Patent Center. Unpublished application information in Patent Center is available to registered users. To file and manage patent submissions in Patent Center, visit: https://patentcenter.uspto.gov.  Visit https://www.uspto.gov/patents/apply/patent - center for more information about Patent Center and
+https://www.uspto.gov/patents/docx	for information about filing in DOCX format. For additional questions, contact the Electronic Business Center (EBC) at 866-217-9197
+ 
+
+(toll-free). If you would like assistance from a USPTO Customer Service Representative, call 800-786-9199  (IN USA OR CANADA)  or 571-272-1000.
+
+
+
+/TONYA JOSEPH/
+Primary Examiner, Art Unit 3628
+
+    </textarea>
+</div>
+<div>
+ <label>CLM	December 7, 2023	Claims submitted with RCE.:</label><br>
+</div>
+    <img src="img/CLM-12-23_Page_1.png" alt="Drawing 1" width="700">
+    <img src="img/CLM-12-23_Page_2.png" alt="Drawing 1" width="700">
+     <img src="img/CLM-12-23_Page_3.png" alt="Drawing 1" width="700">
+    <img src="img/CLM-12-23_Page_4.png" alt="Drawing 1" width="700">
+     <img src="img/CLM-12-23_Page_5.png" alt="Drawing 1" width="700">
+    <img src="img/CLM-12-23_Page_6.png" alt="Drawing 1" width="700">
+     <img src="img/CLM-12-23_Page_7.png" alt="Drawing 1" width="700">
+    <img src="img/CLM-12-23_Page_8.png" alt="Drawing 1" width="700">
+</div>
+</div>
+<div>
+
+<label>CLM	March 11, 2024	Amended claims.:</label><br>
+    <img src="img/CLM-3-24_Page_1.png" alt="Drawing 1" width="700">
+    <img src="img/CLM-3-24_Page_2.png" alt="Drawing 1" width="700">
+     <img src="img/CLM-3-24_Page_3.png" alt="Drawing 1" width="700">
+    <img src="img/CLM-3-24_Page_4.png" alt="Drawing 1" width="700">
+     <img src="img/CLM-3-24_Page_5.png" alt="Drawing 1" width="700">
+    <img src="img/CLM-3-24_Page_6.png" alt="Drawing 1" width="700">
+     <img src="img/CLM-3-24_Page_7.png" alt="Drawing 1" width="700">
+    <img src="img/CLM-3-24_Page_8.png" alt="Drawing 1" width="700">
+
+<div>
+    <label for="doc_1">CTNF	December 18, 2023	Non-final Office Action.:</label><br>
+    <div>
+
+    <img src="img/CTNF-Dec-23_Page_1.png" alt="Drawing 1" width="700">
+        <img src="img/CTNF-Dec-23_Page_2.png" alt="Drawing 1" width="700">
+<label for="doc_1">CTNF	December 18, 2023	Non-final Office Action.:</label><br>
+    <textarea id="doc_1" rows="10" cols="50" placeholder="Paste Specification text here...">
+Notice of Pre-A/A or AJA Status
+
+The present application, filed on or af ter March 16, 2013, is being examined under the f irst inventor to f ile provisions of the AIA.
+Continued Examination  Under 37 CFR 1.114
+
+A request for continued examination under 37 CFR 1.114, including the f ee set forth in 37 CFR 1.17(e), was f iled in this application af ter f inal rejection.  Since this application is eligible for continued examination under 37 CFR 1.114, and the f ee set forth in 37 CFR 1.17(e) has been timely paid, the f inality of the previous Office action has been withdrawn pursuant to 37 CFR 1.114.  Applicant's submission filed on 12/07/23 has been entered.
+Response to Arguments
+
+Applicant's arguments filed 12/072023 have been fully considered but they are not persuasive.
+Applicant argues that the claims are not directed an abstract idea. The Examiner disagrees. The claims are directed to a user searching and subsequently  purchasing travel items. This f alls squarely into the categorization of certain methods of organizing human activity, namely, marketing or sales activities or behaviors; business  relations.
+Applicant f urther argues that the claims amount to an integration of the abstract idea into a practical application. The Examiner disagrees. The elements highlighted  in Applicant's remarks in support of the alleged integration do not show an integration of the abstract idea, instead, these portions describe business  improvements. Further, the recited APl's are recited as generic computing components which serve to implement
+ 
+
+the abstract idea. See also cxLoyalty, Inc. v. Maritz Holdings Inc., 986 F.3d 1367, 1377
+
+(Fed. Cir. 2021) (" The claims apply the abstract idea on a computer by replacing the human intermediary  with a GUI and AP/, but as the Board concluded, representative claim 1 'merely recites generic and conventional computer components (i.e., ''processor," "GUI," and ''AP/'') and functionality for carrying out' the abstract idea." ). Moreover the advantages described in Applicant's  remarks, ie a reduction in network communication, comes from the capabilities  of a general-purpose  computer. i.e. (API component), rather than the patented method itself. Again, the APl's are merely being used as a tool to implement the abstract idea.
+Applicant f urther argues that the claims are similar to those in Enfish, LLC, Microsoft Corp., No. 2015-1244 (Fed. Cir. May 12, 2016). The Examiner disagrees. The claims in Enf ish were determined to be focused on the specif ic improvement in computer capabilities.  In the instant Application there is no improvement to a computer. Even if one looked at the idea of an improvement to the sof tware arts, there is still no comparison, as Applicant's  invention does not provide an improvement to software technology  so much as it adds a general-purpose  computer to human activities and an idea of itself. Moreover, the focus of Applicant's claims is not on an improvement in computers as tools, but on certain independently  abstract ideas that use computers as tools.
+Applicant argues that the claims are similar to those in Bascom Global Internet Services, Inc. v. AT&T Mobility LLC 15-1763, the Examiner disagrees.  Unlike Bascom, the instant Application  does not describe how its particular arrangement of elements is a
+ 
+
+technical improvement. Again, Applicant's supposed  improvem ent is not a technology  - based solution.
+Claim Rejections - 35 USC § 101
+
+35 U.S.C. 101 reads as follows:
+
+Whoever invents or discovers any new and usef ul process, machine, m anufacture, or com position of matter, or any new and usef ul improvementthereof, may obtain a patent therefor, subject to the conditions and requirements of thi s title.
+
+
+1.	Claims 21-40 are rejected under 35 U.S.C. 101 because the claimed invention is directed to non-statutory  subject matter because the claimed invention is directed to a judicial exception (i.e., a law of nature, a natural phenomenon, or an abstract idea) without signif icantly more.
+MPEP 2106 Step 2A-Prong 1
+
+The claims recite:
+
+perf orming and during a low network demand period, a priming query of a plurality of systems, to obtain a plurality of prices and availabilities associated with a plurality of bookable lodgings, wherein the priming query is not associated with a user query, wherein perf orming the priming query during the low network demand period does not increase peak traff ic volume of the plurality of systems;
+
+storing the plurality of prices and availabilities obtained from the priming query in a pricing and availability maintained by the search service system;
+receiving, via a user interacting, user -specified stay inf ormation and one or more criteria; identif ying, using prices and availabilities stored in the pricing and availability database,
+a split-stay split stay that satisf ies the user -specified stay information and the one or more criteria, wherein the split-stay split stay comprises a f irst leg and a second leg two or more legs of the stay that are indicated as available or and wherein each leg of the stay satisf ies satisf y the one or more criteria;
+
+determining, a f irst source of the f irst leg of the split stay that satisf ies the user -specified stay information and a second source of the second an online source of each leg of the split stay that satisf ies the user-specified stay inf ormation;
+
+determining, a f irst price f or the first leg and a second price f or the second leg of the split-stay split stay;
+ 
+
+presenting, the split-stay split stay, the f irst source and the f irst price of the first leg of the split-stay, and the online second source and the second price of the f irst leg of the split stay to the user;
+
+presenting, a single interf ace element that, when selected, initiates a f irst booking by which the user can book all legs of the f irst leg and a second booking of the second leg of the split stay;
+
+receiving, from the user, an approval of the split-stay split stay: and
+in response: f or each contiguous booking of the split-stay, accessing, in response to the approval, a particular f irst lodging provider offering the booking first leg of the split stay and a second lodging provider accessing the second leg of the split stay;
+
+transmitting, simultaneously, a booking f irst request to book the f irst leg of the split stay and transmitting, a second request to book the second leg of the split stay on behalf of the user; and
+
+providing a conf irmation of the f irst booking and the second booking to the user .
+
+
+The claims f alls into the abstract idea groupings  of  (b) Certain  Methods Of Organizing  Human Activity  ** fundamental  economic principles  or practices (including hedging, insurance, mitigating risk) commercial or legal interactions  (including agreements in the form of contracts; legal obligations; advertising, marketing or sales activities or behaviors; business relations) managing personal behavior or relationships or interactions between people (including social activities, teaching, and following rules or instructions)**
+The limitations under their broadest reasonable interpretation, covers performance of the limitation certain methods of organizing human activity and mental processes, but for the recitation of generic computer components.  That is, other than recited, "pricing and availability  database, GUI, online source, search service system, network traffic, API, processors, non-transitory computer readable medium", nothing in the claim element precludes the step from practically being marketing or sales activities or
+ 
+
+behaviors; business relations) managing personal behavior  and mental processes.
+
+Accordingly, the claims recite an abstract idea.
+
+
+
+MPEP 2106 Step 2A-Prong 2
+
+The recited limitations are not indicative of integration  into a practical application.
+
+In particular, the claims only recite the following additional  elements, "pricing and availability database, GUI, online source, search service system, network traffic, API, processors, non-transitory computer readable medium. These additional elements are recited at a high-level of generality  such that in conjunction with the abstract limitations, they amount to no more than:
+•	Adding the words "apply it" (or an equivalent) with the judicial exception, or mere instructions to implement an abstract idea on a computer, or merely uses a computer as a tool to perform an abstract idea - see MPEP 2106.05(f);
+- ("pricing and availability database, GUI, online source, search service system, network traffic, API, processors, non-transitory computer  readable medium)
+The claims do not include additional elements individually or in an ordered combination that are sufficient to amount to signif icantly more than the judicial exception.  Integration into a practical application requires the additional element(s) to apply, rely on, or use the judicial exception in a manner that imposes a meaningf ul limit on the judicial exception, such that the claim is more than a drafting eff ort designed to monopolize the exception. This is not the case in the instant application. Further, as discussed above with respect to integration of the abstract idea into a practical
+ 
+
+application, the additional elements amount to no more than: mere instructions to apply the exception using a generic computer component;
+MPEP 2106 Step 28
+
+Eligibility requires that the claim recites additional elements that amount to an inventive concept (aka "signif icantly more") than the recited judicial exception. As discussed above, this is where the instant application f alls short. The claims do not include additional elements individually  or in an ordered combination that are sufficient to amount to significantly  more than the judicial exception
+Dependent Claims Step 2A:
+
+The limitations of the dependent claims but for those addressed below merely set forth further refinements of the abstract idea without changing the analysis already presented (that is, they f urther limit the organizing  of human activities at step 2A - Prong One without adding any new additional elements other than those already analyzed above with respect to the independent  claims at 2A - Prong Two; moreover while claims 22 and 29 describe priming queries and 23, 27 and 30 describe OTA systems, these additional elements do not remedy the deficiencies.
+Dependent Claims Step 28:
+
+The dependent  claims merely use the same general technological  environment and instructions to implement the abstract idea as the independent  claims without
+adding any new additional elements. Accordingly, they are not directed to signif icantly more than the exception itself , and are not eligible subject matter under § 101.
+Conclusion
+ 
+
+Any inquiry concerning this communication or earlier communications f rom the examiner should be directed to TONYA S JOSEPH whose telephone  number is
+(571)270-1361.  The examiner can normally be reached M-F 6:30-2:30,  First Fridays Off .
+
+Examiner interviews are available via telephone,  in-person, and video
+
+conf erencing using a USPTO supplied web-based collaboration tool. To schedule an interview, applicant is encouraged to use the USPTO Automated Interview Request (AIR) at http://www.uspto.gov/interviewpractice.
+If attempts to reach the examiner by telephone  are unsuccessful, the exam iner's supervisor, Shannon Campbell can be reached on (571) 272-5587. The f ax phone number for the organization where this application or proceeding is assigned is 571 - 273-8300.
+Information regarding the status of published or unpublished applications may be obtained f rom Patent Center. Unpublished application information in Patent Center is available to registered users. To file and manage patent submissions  in Patent Center, visit: https://patentcenter .uspto .gov. Visit https://www .uspto.gov/patents/apply /patent- center for more information about Patent Center and
+https://www.uspto.gov/patents/docx	for information about filing in DOCX format. For additional questions, contact the Electronic Business Center (EBC) at 866-217-9197 (toll-free). If you would like assistance from a USPTO Customer Service Representative,  call 800-786-9199  (IN USA OR CANADA) or 571-272-1000.
+
+
+
+/TONYA JOSEPH/
+Primary Examiner, Art Unit 3628
+
+
+    </textarea>
+</div>
+</div>
+
+
+
+
+<div>
+    <label for="doc_1">CTFR	March 25, 2024	Final Office Action.:</label><br>
+    <div>
+
+    <img src="img/CTFR-3-24_Page_1.png" alt="Drawing 1" width="700">
+        <img src="img/CTFR-3-24_Page_2.png" alt="Drawing 1" width="700">
+<label for="doc_1">CTFR	March 25, 2024	Final Office Action..:</label><br>
+    <textarea id="doc_1" rows="10" cols="50" placeholder="Paste Specification text here...">
+
+DETAILED ACTION
+
+Notice of Pre-A/A or AJA Status
+
+The present application, filed on or af ter March 16, 2013, is being examined under the f irst inventor to f ile provisions of the AIA.
+Response to Arguments
+
+Applicant's arguments filed 03/11/2024 have been f ully considered but they are not persuasive.
+Applicant argues that the claims are not directed an abstract idea. The Examiner disagrees. The claims are directed to an initial priming query and a user searching and subsequently  purchasing travel items. This f alls squarely into the categorization of certain methods of organizing  human activity , namely, marketing or sales activities or behaviors; business relations.
+Applicant argues that the claims recite " The practical application of maintaining  and using a price and availability  database to enable booking of complex split-stay lodging on behalf of the user by presenting a single user interface and without increasing network traffic volume during peak-demand periods." The Examiner disagrees.
+Applicant describes performing a priming query during low network demand periods, but this step is merely the collection of data in a database. This does not describe a
+practical application.  Further strategically determining to perform searches during low demand periods is not a technology-based  solution to a problem rooted in computer technology.	Determining whether or not results are still "active" can be performed by a human without the need of a computer. Moreover, there is no improvement to a
+ 
+
+computer. Accordingly, Applicant's arguments are not persuasive and the rejections are maintained.
+Claim Rejections - 35 USC § 101
+
+35 U.S.C. 101 reads as follows:
+
+Whoever invents or discovers any new and usef ul process, machine, m anufacture, or com position of matter, or any new and usef ul improvementthereof, may obtain a patent therefor, subject to the conditions and requirements of this title.
+
+
+1.	Claims 21-40 are rejected under 35 U.S.C. 101 because the claimed invention is directed to non-statutory  subject matter because the claimed invention is directed to a judicial exception (i.e., a law of nature, a natural phenomenon, or an abstract idea) without signif icantly more.
+MPEP 2106 Step 2A-Prong 1
+
+The claims recite:
+
+determining, a f irst low demand period; performing, during the f irst low demand period, a priming query of a plurality of systems, to obtain a plurality of prices and availabilities associated with a plurality of bookable lodgings, wherein the priming query is not associated with a user query, wherein perf orming the priming query during the low network demand period does not increase peak traffic volume of the plurality of systems;
+
+storing the plurality of prices and availabilities obtained from the priming query in a pricing and availability maintained by the search service system;
+receiving, via a user interacting, user -specified stay inf ormation and one or more criteria; identif ying, using prices and availabilities stored in the pricing and availability database,
+a split-stay split stay that satisf ies the user-specified stay information and the one or more criteria, wherein the split-stay split stay comprises a f irst leg and a second leg two or more legs of the stay that are indicated as available or and wherein each leg of the stay satisf ies satisf y the one or more criteria;
+
+determining, a f irst source of the f irst leg of the split stay that satisf ies the user -specified stay information and a second source of the second an online source of each leg of the split stay that satisf ies the user-specified stay inf ormation;
+
+determining, a f irst price f or the first leg and a second price f or the second leg of the split-stay split stay;
+ 
+
+presenting, the split-stay split stay, the f irst source and the f irst price of the first leg of the split-stay, and the online second source and the second price of the f irst leg of the split stay to the user;
+
+presenting, a single interf ace element that, when selected, initiates a f irst booking by which the user can book all legs of the f irst leg and a second boo king of the second leg of the split stay;
+
+receiving, from the user, an approval of the split-stay split stay: and
+in response: f or each contiguous booking of the split -stay, accessing, in response to the approval, a particular f irst lodging provider offering the booking first leg of the split stay and a second lodging provider accessing the second leg of the split stay;
+
+transmitting, simultaneously, a booking f irst request to book the f irst leg of the split stay and transmitting, a second request to book the second leg of the split stay on behalf of the user; and
+
+providing a conf irmation of the f irst booking and the sec ond booking to the user.; identif ying and during a second low demand period, an alternative stay option; determining the alternative stay option satisf ies a rebooking criteria; and transmitting, during the second low demand period, a third request to book the alternative stay option on behalf of the user.
+
+The claims f alls into the abstract idea groupings  of  (b) Certain  Methods Of Organizing  Human Activity  ** fundamental  economic principles or practices (including hedging, insurance, mitigating risk) commercial or legal interactions  (including agreements in the form of contracts; legal obligations; advertising, marketing or sales activities or behaviors; business relations) managing personal behavior or relationships or interactions  between people (including social activities, teaching, and following rules or instructions)**
+The limitations  under their  broadest  reasonable  interpretation,   covers performance of the limitation  certain  methods of organizing  human activity and mental processes,  but for the recitation  of generic  computer components.	That is, other than  recited, "pricing and availability   database,  GUI, online  source,  search  service  system,  network traffic,
+ 
+
+API, processors, non-transitory  computer readable medium", nothing in the claim element precludes the step from practically being marketing or sales activities or behaviors; business relations) managing personal behavior and mental processes . Accordingly, the claims recite an abstract idea.
+
+
+MPEP 2106 Step 2A-Prong 2
+
+The recited limitations are not indicative of integration  into a practical application.
+
+In particular, the claims only recite the following additional  elements, " pricing and availability database, GUI, online source, search service system, network traffic, API, processors, non-transitory computer readable medium. These additional elements are recited at a high-level of generality  such that in conjunction with the abstract limitations, they amount to no more than:
+•	Adding the words "apply it" (or an equivalent) with the judicial exception, or mere instructions to implement an abstract idea on a computer, or merely uses a computer as a tool to perform an abstract idea - see MPEP 2106.05(f);
+- ("pricing and availability database, GUI, online source, search service system, network traffic, API, processors, non-transitory computer  readable medium)
+•	mere data gathering/post  solution activity in conjunction with a law of nature or abstract idea such as a step of obtaining information about credit card transactions so that the information can be analyzed by an abstract mental process,-(low network demand period)
+ 
+
+The claims do not include additional  elements individually or in an ordered combination that are sufficient to amount to signif icantly more than the judicial exception.  Integration into a practical application  requires the additional element(s) to apply, rely on, or use the judicial exception in a manner that imposes a meaningf ul limit on the judicial exception, such that the claim is more than a drafting eff ort designed to monopolize the exception. This is not the case in the instant application.  Further, as discussed above with respect to integration of the abstract idea into a practical application, the additional elements amount to no more than: mere instructions to apply the exception using a generic computer component;
+MPEP 2106 Step 28
+
+Eligibility requires that the claim recites additional elements that amount to an inventive concept (aka "signif icantly more") than the recited judicial exception. As discussed above, this is where the instant application f alls short. The claims do not include additional elements individually or in an ordered combination that are sufficient to amount to significantly  more than the judicial exception.
+Berkheimer-With respect to consideration of routine and conventional subject matter,  the additional elements-("low  demand persiods")-are described in the original speciication  at a high level of generality and in a manner that indicates that they are sufficiently well-known that the specification does not need to describe the particulars of these elements to satisf y the statutory disclosure requirements.
+
+
+Dependent Claims Step 2A:
+ 
+
+The limitations of the dependent claims but for those addressed below merely set forth further refinements of the abstract idea without changing the analysis already presented (that is, they f urther limit the organizing  of human activities at step 2A - Prong One without adding any new additional elements other than those already analyzed above with respect to the independent  claims at 2A - Prong Two; moreover while claims 22 and 29 describe priming queries and 23, 27 and 30 describe OTA systems, these additional elements do not remedy the def iciencies.
+Dependent Claims Step 28:
+
+The dependent  claims merely use the same general technological environment and instructions to implement the abstract idea as the independent  claims without
+adding any new additional elements. Accordingly, they are not directed to significantly more than the exception itself , and are not eligible subject matter under § 101.
+Conclusion
+
+THIS ACTION IS MADE FINAL.  Applicant  is reminded of the extension of time policy as set forth in 37 CFR 1.136(a).
+A shortened statutory period for reply to this f inal action is set to expire THREE MONTHS from the mailing date of this action.  In the event a f irst reply is filed within TWO MONTHS of the mailing date of this final action and the advisory action is not mailed until after the end of the THREE-MONTH shortened statutory period, then the shortened statutory period will expire on the date the advisory action is mailed, and any extension f ee pursuant to 37 CFR 1.136(a) will be calculated f rom the mailing date of the advisory action.  In no event, however, will the statutory period for reply expire later than SIX MONTHS from the mailing date of this f inal action.
+ 
+
+Any inquiry concerning this communication or earlier communications f rom the examiner should be directed to TONYA S JOSEPH whose telephone  number is
+(571)270-1361.  The examiner can normally be reached M-F 6:30-2:30,  First Fridays Off .
+
+Examiner interviews are available via telephone,  in-person, and video
+
+conf erencing using a USPTO supplied web-based collaboration tool. To schedule an interview, applicant is encouraged to use the USPTO Automated Interview Request (AIR) at http://www.uspto.gov/interviewpractice.
+If attempts to reach the examiner by telephone  are unsuccessful, the exam iner's supervisor, Shannon Campbell can be reached on (571) 272-5587. The f ax phone number for the organization where this application or proceeding is assigned is 571 - 273-8300.
+Information regarding the status of published or unpublished applications may be obtained f rom Patent Center. Unpublished application information in Patent Center is available to registered users. To file and manage patent submissions  in Patent Center, visit: https://patentcenter .uspto .gov. Visit https://www .uspto.gov/patents/apply /patent- center for more information about Patent Center and
+https://www.uspto.gov/patents/docx	for information about filing in DOCX format. For additional questions, contact the Electronic Business Center (EBC) at 866-217-9197 (toll-free). If you would like assistance from a USPTO Customer Service Representative,  call 800-786-9199  (IN USA OR CANADA) or 571-272-1000.
+
+
+
+/TONYA  JOSEPH/
+Primary Examiner, Art Unit 3628
+
+
+            </textarea>
+</div>
+</div>
+
+
+
+
+<div>
+    <label for="doc_1">CLM	May 14, 2024	Claims submitted with amendment/AFCP papers.:</label><br>
+    <div>
+
+    <img src="img/CLM-4-24_Page_1.png" alt="Drawing 1" width="700">
+    <img src="img/CLM-4-24_Page_2.png" alt="Drawing 1" width="700">
+    <img src="img/CLM-4-24_Page_3.png" alt="Drawing 1" width="700">
+    <img src="img/CLM-4-24_Page_4.png" alt="Drawing 1" width="700">
+     <img src="img/CLM-4-24_Page_5.png" alt="Drawing 1" width="700">
+    <img src="img/CLM-4-24_Page_6.png" alt="Drawing 1" width="700">
+    <img src="img/CLM-4-24_Page_7.png" alt="Drawing 1" width="700">
+    <img src="img/CLM-4-24_Page_8.png" alt="Drawing 1" width="700">
+
+    </div>
+</div>
+
+
+
+
+<div>
+    <label for="doc_1">CTAV	June 5, 2024	Examiner interview record.</label><br>
+    <div>
+
+    <img src="img/CTAV-6-24_Page_1.png" alt="Drawing 1" width="700">
+    <img src="img/CTAV-6-24_Page_2.png" alt="Drawing 1" width="700">
+    <img src="img/CTAV-6-24_Page_3.png" alt="Drawing 1" width="700">
+    
+
+    </div>
+</div>
+
+<div>
+    <label for="doc_1">CLM	June 25, 2024	Claims submitted with RCE..</label><br>
+    <div>
+
+    <img src="img/CLM-6-24_Page_1.png" alt="Drawing 1" width="700">
+    <img src="img/CLM-6-24_Page_2.png" alt="Drawing 1" width="700">
+      <img src="img/CLM-6-24_Page_3.png" alt="Drawing 1" width="700">
+    <img src="img/CLM-6-24_Page_4.png" alt="Drawing 1" width="700">
+     <img src="img/CLM-6-24_Page_5.png" alt="Drawing 1" width="700">
+    <img src="img/CLM-6-24_Page_6.png" alt="Drawing 1" width="700">
+     <img src="img/CLM-6-24_Page_7.png" alt="Drawing 1" width="700">
+     <img src="img/CLM-6-24_Page_8.png" alt="Drawing 1" width="700">
+    
+
+    </div>
+</div>
+
+
+<div>
+    <label for="doc_1">NOA	July 11, 2024	Notice of Allowance.</label><br>
+    <div>
+
+    <img src="img/NOA-7-20_Page_1.png" alt="Drawing 1" width="700">
+    <img src="img/NOA-7-20_Page_2.png" alt="Drawing 1" width="700">
+     <img src="img/NOA-7-20_Page_3.png" alt="Drawing 1" width="700">
+    <img src="img/NOA-7-20_Page_4.png" alt="Drawing 1" width="700">
+     <img src="img/NOA-7-20_Page_5.png" alt="Drawing 1" width="700">
+    <img src="img/NOA-7-20_Page_6.png" alt="Drawing 1" width="700">
+     <img src="img/NOA-7-20_Page_7.png" alt="Drawing 1" width="700">
+    <img src="img/NOA-7-20_Page_8.png" alt="Drawing 1" width="700">
+    
+
+    </div>
+</div>
+
+
+
+<div>
+    <label for="doc_1">IIFW	July 11, 2024	Issue-information record; useful for checking the allowed claims and issue processing..</label><br>
+    <div>
+
+    <img src="img/IIFW-7-24_Page_1.png" alt="Drawing 1" width="700">
+    <img src="img/IIFW-7-24_Page_2.png" alt="Drawing 1" width="700">
+     <img src="img/IIFW-7-24_Page_3.png" alt="Drawing 1" width="700">
+    
+
+    </div>
+</div>
+
+
+<div>
+    <label for="doc_1">N417 / N417.PYMT	October 9, 2024	Issue-fee correspondence and payment records..</label><br>
+    <div>
+
+    <img src="img/N417 -20-24_Page_1.png" alt="Drawing 1" width="700">
+    <img src="img/N417 -20-24_Page_2.png" alt="Drawing 1" width="700">
+    
+
+    </div>
+</div>
+
+
+
+<div>
+    <label for="doc_1">N427	October 9, 2024	Issue-related notice.</label><br>
+    <div>
+
+    <img src="img/N417 -Fee-7-24_Page_1.png" alt="Drawing 1" width="700">
+    <img src="img/N417 -Fee-7-24_Page_2.png" alt="Drawing 1" width="700">
+    
+
+    </div>
+</div>
+
+
+
+<div>
+    <label for="doc_1">N427	October 9, 2024	Issue-related notice.</label><br>
+    <div>
+
+    <img src="img/IIFW-10-24.png" alt="Drawing 1" width="700">
+    
+
+    </div>
+</div>
+
+
+
+<div>
+    <label for="doc_1">ISSUE.NTF	October 23, 2024	Issue notification.</label><br>
+    <div>
+
+    <img src="img/ISSUE.NTF-10-14_Page_1.png" alt="Drawing 1" width="700">
+        <img src="img/ISSUE.NTF-10-14_Page_2.png" alt="Drawing 1" width="700">
+
+    
+
+    </div>
+</div>
+
+
+
+<div>
+    <label for="doc_1">EGRANT.NTF	November 12, 2024	Electronic grant notification; .</label><br>
+    <div>
+
+    <img src="img/EGRANT.NTF-11-24_Page_1.png" alt="Drawing 1" width="700">
+        <img src="img/EGRANT.NTF-11-24_Page_2.png" alt="Drawing 1" width="700">
+
+    
+
+    </div>
+</div>
+<script>
+function compileText() {
+    let doc1 = document.getElementById('doc_1').value.trim();
+    let doc2 = document.getElementById('doc_2').value.trim();
+    
+    let output = "=== COMPILED DOSSIER TEXT ===\n\n";
+    if(doc1) output += "--- SPECIFICATION ---\n" + doc1 + "\n\n";
+    if(doc2) output += "--- CLAIMS ---\n" + doc2 + "\n\n";
+    
+    let outputArea = document.getElementById('output-area');
+    let resultBox = document.getElementById('result-box');
+    
+    outputArea.style.display = 'block';
+    resultBox.value = output;
+    resultBox.select();
+}
+</script>
+
+</body>
+</html>
